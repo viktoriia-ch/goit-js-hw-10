@@ -73,12 +73,14 @@ const showCountries = countries => {
 
 const onInputName = e => {
   const { value } = e.target;
-  if (value.trim() === '') {
+  const newvalue = value.trim();
+
+  if (newvalue === '') {
     clearList();
     clearContainer();
   }
 
-  fetchCountries(value)
+  fetchCountries(newvalue)
     .then(response => response.json())
     .then(countries => {
       if (countries.status === 404) {
