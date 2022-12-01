@@ -17,7 +17,7 @@ export const countryTemplate = ({
   <ul class='country-container-list'>
   <li><span class='country-container-item'>Capital: </span>${capital}</li>
   <li><span class='country-container-item'>Population: </span>${population}</li>
-  <li><span class='country-container-item'>Languages:</span>${languagesList}</li>
+  <li><span class='country-container-item'>Languages: </span>${languagesList}</li>
   </ul>`;
 };
 

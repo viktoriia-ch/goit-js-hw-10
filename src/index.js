@@ -47,11 +47,13 @@ const showInfoNotification = () => {
 
 const showCountriesList = countries => {
   clearContainer();
+  clearList();
   renderList(countries);
 };
 
 const showCountryInfo = countries => {
   clearList();
+  clearContainer();
   renderContainer(countries);
 };
 
