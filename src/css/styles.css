@@ -25,6 +25,7 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 #search-box {
@@ -35,6 +36,10 @@ ul {
   max-width: 320px;
   padding: 8px;
   margin-top: 15px;
+}
+
+#search-box::placeholder {
+  font-size: 15px;
 }
 
 .country-list {
@@ -55,6 +60,12 @@ ul {
 .country-container-heading {
   display: flex;
   align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.country-container-list {
+  padding: 0;
 }
 
 .country-container-title {
@@ -62,6 +73,6 @@ ul {
   margin: 0;
 }
 
-.country-container-key {
+.country-container-item {
   font-weight: bold;
 }
