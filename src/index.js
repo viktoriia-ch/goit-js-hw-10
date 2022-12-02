@@ -78,14 +78,11 @@ const onInputName = e => {
   if (newvalue === '') {
     clearList();
     clearContainer();
+    return;
   }
 
   fetchCountries(newvalue)
-    .then(response => response.json())
     .then(countries => {
-      if (countries.status === 404) {
-        throw new Error();
-      }
       showCountries(countries);
     })
     .catch(onError);
